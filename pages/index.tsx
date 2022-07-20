@@ -70,7 +70,12 @@ const Home: NextPage = () => {
     return (
       <div className={styles.pageEmpty}>
         <h1 className="text-white">You are not logged in</h1>
-        <button onClick={loginUsingDiscord} className="text-white text-xl underline hover:text-gray-300">Login using Discord</button>
+        <button
+          onClick={loginUsingDiscord}
+          className="text-white text-xl underline hover:text-gray-300"
+        >
+          Login using Discord
+        </button>
       </div>
     );
   }
@@ -93,9 +98,14 @@ const Home: NextPage = () => {
 
   if (data.owed === 0) {
     return (
-      <div className={styles.pageEmpty}>
-        <h1 className="text-white text-3xl">You have no debt.</h1>
-        <p className="text-white">Consider sending a tip.</p>
+      <div className={styles.page}>
+        <button className="text-white float-right mr-10 mb-5" onClick={logout}>
+          Logout
+        </button>
+        <div className="absolute inset-y-1/2 -translate-y-1/2 w-screen h-max">
+          <h1 className="text-white text-3xl text-center">You have no debt.</h1>
+          <p className="text-white text-center">Consider sending a tip.</p>
+        </div>
       </div>
     );
   }
