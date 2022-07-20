@@ -12,7 +12,7 @@ interface Data extends Models.Document {
 
 const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE as string;
 const collectionId = process.env.NEXT_PUBLIC_APPWRITE_COLLECTION as string;
-const url = process.env.DEPLOYMENT_URL as string | 'http://localhost:3000';
+const url = process.env.NEXT_PUBLIC_DEPLOYMENT_URL as string | 'http://localhost:3000';
 
 const Home: NextPage = () => {
   const [user, userLoading, userError] = useAccount(Appwrite);
