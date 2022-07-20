@@ -117,7 +117,7 @@ const Home: NextPage = () => {
       </button>
       <br />
       <div className="absolute inset-y-1/2 -translate-y-1/2 w-screen h-max">
-        <h1 className="text-9xl text-center text-red-800 blaka mb-5">
+        <h1 className="text-6xl sm:text-9xl text-center text-red-800 blaka mb-5">
           Du hast Schulden
         </h1>
         <p className="text-white text-center text-sm">
