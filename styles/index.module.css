@@ -1,0 +1,13 @@
+.page {
+  @apply min-h-screen w-screen py-2;
+  background-image: url('/blackboard.jpg');
+  background-position: center center;
+  background-size: cover;
+}
+
+.pageEmpty {
+  @apply min-h-screen w-screen flex flex-col items-center justify-center;
+  background-image: url('/blackboard.jpg');
+  background-position: center center;
+  background-size: cover;
+}
